@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../../resources/images/background-1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+hr{
+  border: none;
+  margin-top: 15px;
+}

@@ -1,0 +1,53 @@
+.container{
+  width: 100vw;
+  margin: 0;
+  background: hsla(300, 100%, 25%, 80%);
+  display: inline-flex;
+  justify-content: space-around;
+
+}
+
+.container div{
+
+}
+
+.container a{
+  color: white;
+  text-decoration: none;;
+  width: 100%;
+  margin: 0;
+  font-weight: 300;
+  padding: 20px;
+  flex-basis: 14vw;
+  text-align: center;
+  transition: .45s;
+
+}
+
+.container h2{
+  font-weight: 300;
+}
+
+.container a:hover{
+  background: hsla(270, 100%, 60%, 80%);
+  color: hsl(1, 0%, 90%);
+}
+
+.container a:active{
+  background: hsla(300, 60%, 80%, 80%);
+  color: black;
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+}
+
+.submenu{
+  display: none;
+}

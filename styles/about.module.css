@@ -1,0 +1,32 @@
+.profile{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.aboutSection{
+  display: flex;
+  padding: 2vw;
+  align-items: center;
+  justify-content: center;
+  background: hsla(300, 100%, 60%, 40%);
+  margin-bottom: 15vh;
+  z-index: 0;
+}
+
+.aboutSection h1{
+  font-family: 'League Gothic';
+  font-size: 100px;
+}
+
+.words h2{
+  font-weight: 100;
+}
+
+.words{
+  margin: 2vw;
+}
+
+.profile{
+  z-index: 0;
+}

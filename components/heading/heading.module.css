@@ -1,0 +1,18 @@
+.heading{
+  padding: 5px 10px;
+  text-align: right;
+  background: hsla(300, 100%, 25%, 50%);
+  width: 805px;
+  font-size: 30px;
+}
+
+.heading h1{
+  font-family: 'League Gothic', sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+
+}
+
+.headingContainer{
+  margin: 5vw auto 5vw 50vw ;
+}

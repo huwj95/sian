@@ -1,0 +1,54 @@
+.nav{
+  width: 100vw;
+  margin: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
+.menuitem a{
+  color: white;
+}
+
+
+.submenu ul{
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.menuitem{
+  width: calc(100vw/6);
+  text-align: center;
+
+}
+
+.menuitem h2{
+  background: hsla(300, 100%, 25%, 90%);
+  padding: 20px 0px;
+  font-weight: 300;
+  transition: 1s;
+}
+
+.menuitem h2:hover{
+  background: hsla(270, 100%, 60%, 80%);
+  color: hsl(1, 0%, 90%);
+  transition: 0.45s;
+}
+
+.menuitem h2:active{
+  background: hsla(300, 60%, 80%, 80%);
+  color: black;
+  transition: 0.1s;
+}
+
+.button{
+  background: inherit;
+}
+
+.submenu{
+  position: absolute;
+  width: calc(100vw/6);
+
+}
