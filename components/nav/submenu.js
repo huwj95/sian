@@ -5,9 +5,23 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import styles from './nav.module.css';
 import useWindowSize from '../../hooks/useWindowSize';
-import tags from '../../lib/post-info'
+import { tags } from '../../lib/post-info'
 
-
+// const tags = [
+//   {
+//     category: 'sex',
+//     tags: ['sex1', 'sex2', 'sex3']
+//   },
+//   {
+//     category: 'relationships',
+//     tags: ['relationships1', 'relationships2', 'relationships3']
+//   },
+//   {
+//       category: 'books',
+//       tags: ['books1']
+//   }
+//
+// ]
 
 export default function Submenu(props) {
 
@@ -44,21 +58,18 @@ export default function Submenu(props) {
 		// 	};
 		// }, [isOpen, buttonRef]);
 
+	const tagsArrayIndex = tags.findIndex(n => n.category === props.category);
+	const arrayOfTags = tags[tagsArrayIndex].tags;
+
 	const [width, height] = useWindowSize();
-	const pages = [
-		{
-			path: '/whateva',
-			name: 'subcat1',
-		},
-		{
-			path: '/subcat2',
-			name: 'subcat2'
-		},
-		{
-			path: '/mypage',
-			name: 'subcat3',
-		},
-	];
+	const pages = tags[tagsArrayIndex].tags.map(x => {
+			return ({
+			path: `/${x}`,
+			name: x,
+		})
+	}
+	);
+
 
 	const navStyle = {
     display: isOpen? 'inherit' : 'none',

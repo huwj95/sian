@@ -1,4 +1,4 @@
-/*
+
 import Layout from '../../components/layout/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import ArticleStyle from '../../components/article/article.module.css'
@@ -49,4 +49,3 @@ export async function getStaticProps({ params }) {
     }
   }
 }
-*/

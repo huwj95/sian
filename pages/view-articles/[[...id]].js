@@ -52,8 +52,9 @@ import Layout from '../../components/layout/layout'
 import { getAllPostIds, getPostData} from '../../lib/posts'
 import ArticleStyle from '../../components/article/article.module.css'
 import Image from 'next/image'
+import tags from '../../lib/post-info'
 
-export default function Post({ postData }) {
+export default function View({ postData }) {
 
   const imageUrl = (input) => {
     if(input.imageUrl){
@@ -62,27 +63,41 @@ export default function Post({ postData }) {
       return '/../public/images/profile.jpg'
   }
 
-//   return (
-//     <Layout>
-//     <section className={ArticleStyle.articleContainer}>
-//       <article className={ArticleStyle.article}>
-//         <heading className={ArticleStyle.heading}>
-//           <div className={ArticleStyle.title}>
-//             <h2>{postData.title}</h2><br />
-//             {postData.quote}
-//           </div>
-//           //<Image src={imageUrl(postData)} alt={postData.imageAlt} width='200px' height='200px'/>
-//         </heading>
-//         <br />
-//         <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}></div>
-//
-//       </article>
-//     </section>
-//     </Layout>
-//   )
-// }
+  return (
+    <Layout>
+  {/*}  <section className={ArticleStyle.articleContainer}>
+      <article className={ArticleStyle.article}>
+        <heading className={ArticleStyle.heading}>
+          <div className={ArticleStyle.title}>
+            <h2>{postData.title}</h2><br />
+            {postData.quote}
+          </div>
+          //<Image src={imageUrl(postData)} alt={postData.imageAlt} width='200px' height='200px'/>
+        </heading>
+        <br />
+        <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}></div>
 
-return <h1>contnt</h1>}
+      </article>
+    </section>{*/}
+
+    </Layout>
+  )
+}
+
+// return <h1>contnt</h1>}
+// aiming for an object named paths
+// format should be paths: [
+//   {
+//     params: {
+//       id: 'whatever the id is'
+//     }
+//   }, {...}, {...}
+// ]
+// const paths = [{
+//   params: {
+//     id: '1'
+//   }
+// }]
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
